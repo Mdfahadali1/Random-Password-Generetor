@@ -1,20 +1,20 @@
-let inputPwdHolder = document.querySelector('#PwdGenretorDisplay')
-let imgfUserDefineTag = document.querySelector('[ImagefUserDefineTag]')
-let dataCopy1 = document.querySelector('[dataCopy]')
+let inputPwdHolder = document.querySelector('#PwdGenretorDisplay');
+let imgfUserDefineTag = document.querySelector('[ImagefUserDefineTag]');
+let dataCopy1 = document.querySelector('[dataCopy]');
 let slider = document.querySelector('[input-dataslider]');
 let output = document.querySelector('.pwdLen');
 let upperCaseC = document.querySelector('#upperCase');
 let lowerrCaseC = document.querySelector('#lowercase');
-let numberS = document.querySelector('#numbers')
-let sybmolS = document.querySelector('#sybmols')
+let numberS = document.querySelector('#numbers');
+let sybmolS = document.querySelector('#sybmols');
 let manualStrings = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/';
 //accssing through the typr of a input type
-let checkList = document.querySelectorAll('input[type=checkbox]')
-let indicator = document.querySelector('.colorAsperPwd')
-let genpassWord = document.querySelector('.genPASSWORD')
+let checkList = document.querySelectorAll('input[type=checkbox]');
+let indicator = document.querySelector('.colorAsperPwd');
+let genpassWord = document.querySelector('.genPASSWORD');
 
 
-let password = ""
+let password = "";
 let passwordLength = 9;
 //atleast one default should be selected however
 
