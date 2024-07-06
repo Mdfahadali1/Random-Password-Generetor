@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasssWord_Gen</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+ <!-- //main container -->
+ <div class="container">
+
+    <h2 class="pwd-heading">PASSWORD GENERATOR</h2>
+    <!-- display pwd -->
+    <div class="pwdreadText">
+        <input readonly type="text" placeholder="PassWord" name="passwordgr" id="PwdGenretorDisplay">
+        <button dataCopy class="copybtn active">
+            <span ImagefUserDefineTag class=""></span>
+            <img src="./assets/copy.svg" alt="" width="30">
+        </button>
+    </div>
+
+    <!-- pwdSet div -->
+    <div class="setPwdSetiing">
+        <!-- div pwd length -->
+        <div class="pwdLength">
+            <p>Password length</p>
+            <p class="pwdLen">0</p>
+            <!-- <p class="pwdLen"></p> -->
+        </div >
+    
+            <input type="range" value="13" min="1" max="20" id="RangeItems" step="1" input-dataslider>
+
+        <!-- //check box div -->
+        <div class="featuresRequirmwent">
+            <!-- incldes uppercase -->
+           <div class="innerFeaturesDiv">
+            <input type="checkbox" name="check" id="upperCase">
+            <label for="upperCase"> Include Uppercase length</label>
+           </div>
+           <!-- include upperCase -->
+           <div class="innerFeaturesDiv">
+            <input type="checkbox" name="check" id="lowercase">
+            <label for="lowercase"> Include Lowercase length</label>
+           </div>
+
+       <!-- include numbers -->
+           <div class="innerFeaturesDiv">
+            <input type="checkbox" name="check" id="numbers">
+            <label for="numbers"> Include Numbers length</label>
+           </div>
+
+                   <!-- include symbols -->
+                   <div class="innerFeaturesDiv">
+                    <input type="checkbox" name="check" id="sybmols">
+                    <label for="sybmols"> Include Symbols length</label>
+                   </div>
+
+        </div>
+
+        <!--pwd -description -->
+        <div class="Pwd-description">
+            <p>Strength</p>
+            <div class="colorAsperPwd"></div>
+        </div>
+
+        <button class="genPASSWORD">
+            GENERATE PASSWORD
+        </button>
+        
+    </div>
+</div>
+    </div>
+       <script src="script.js"></script>
+</body>
+</html>
